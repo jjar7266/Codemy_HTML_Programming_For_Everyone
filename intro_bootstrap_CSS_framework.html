@@ -1,0 +1,93 @@
+<!--
+    ============================================
+    Codemy.com — HTML Programming For Everyone
+    Instructor: John Elder
+
+    Coded and Followed Along By:
+    Jose "Joe" Ruiz
+
+    Lesson: Intro To Bootstrap CSS Framework
+    ============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojo's Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================
+         Main Heading
+         ============================ -->
+    <div class="container mt-4">
+        <h1>Intro To Bootstrap CSS Framework</h1>
+
+        <!-- ============================
+             Table Example Styled With CSS
+             ============================ -->
+        <table class="styled-table">
+
+            <!-- Column Width Control -->
+            <colgroup>
+                <col style="width: 15%;">  <!-- Data column -->
+                <col style="width: 35%;">  <!-- Name column -->
+                <col style="width: 30%;">  <!-- Email column -->
+                <col style="width: 20%;">  <!-- Color column -->
+            </colgroup>
+
+            <!-- Table Title Row -->
+            <tr class="title-row">
+                <th colspan="4">My Table</th>
+            </tr>
+
+            <!-- Header Row with Rowspan -->
+            <tr>
+                <th rowspan="4">Data</th>
+                <th>Name</th>
+                <th>Email Address</th>
+                <th>Favorite Color</th>
+            </tr>
+
+            <!-- Data Rows -->
+            <tr>
+                <td>Jose Ruiz</td>
+                <td>jjar7266@gmail.com</td>
+                <td>Black</td>
+            </tr>
+
+            <tr>
+                <td>Tricia Drew</td>
+                <td>tricia@tricia.com</td>
+                <td>Flamingo Pink</td>
+            </tr>
+
+            <tr>
+                <td>Nicole Allan</td>
+                <td>nicole@fake.com</td>
+                <td>Red</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
