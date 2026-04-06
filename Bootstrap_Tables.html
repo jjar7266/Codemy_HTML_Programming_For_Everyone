@@ -1,0 +1,152 @@
+<!--
+    ============================================
+    Codemy.com — HTML Programming For Everyone
+    Instructor: John Elder
+
+    Coded and Followed Along By:
+    Jose "Joe" Ruiz
+
+    Lesson: Bootstrap Tables
+    ============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojo's Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- ============================
+         Main Heading
+         ============================ -->
+    <div class="container mt-4">
+        <h1>Bootstrap Tables</h1>
+
+        <!-- ============================
+             Bootstrap Table Example
+             ============================ -->
+        <table class="table table-striped table-hover">
+
+            <!-- Column Width Control -->
+            <colgroup>
+                <col style="width: 35%;"> <!-- Name column -->
+                <col style="width: 35%;"> <!-- Email column -->
+                <col style="width: 30%;"> <!-- Color column -->
+            </colgroup>
+
+            <!-- Header Row -->
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Email Address</th>
+                    <th>Favorite Color</th>
+                </tr>
+            </thead>
+
+            <!-- Data Rows -->
+            <tbody>
+                <tr>
+                    <td>Jose Ruiz</td>
+                    <td>jjar7266@gmail.com</td>
+                    <td>Black</td>
+                </tr>
+
+                <tr class="table-success">
+                    <td>Tricia Drew</td>
+                    <td>tricia@tricia.com</td>
+                    <td>Flamingo Pink</td>
+                </tr>
+
+                <tr>
+                    <td>Nicole Allan</td>
+                    <td>nicole@fake.com</td>
+                    <td>Red</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <!-- ============================
+             Lesson Notes
+             ============================ -->
+        <h2>Lesson Notes</h2>
+
+        <p>
+            In this lesson, we learned how to use Bootstrap’s built‑in table
+            classes to quickly style and enhance HTML tables without writing
+            custom CSS. Bootstrap tables are clean, responsive, and easy to
+            customize.
+        </p>
+
+        <h3>Bootstrap Table Classes Used</h3>
+
+        <ul>
+            <li>
+                <strong>table</strong> — the base Bootstrap table class that adds
+                spacing, padding, and clean formatting.
+            </li>
+            <li>
+                <strong>table-striped</strong> — adds alternating row colors
+                (zebra striping) for better readability.
+            </li>
+            <li>
+                <strong>table-hover</strong> — highlights rows when the mouse
+                moves over them.
+            </li>
+            <li>
+                <strong>table-dark</strong> — used on the <code>&lt;thead&gt;</code>
+                to create a bold, dark header row.
+            </li>
+        </ul>
+
+        <h3>Row Variants</h3>
+        <p>
+            Bootstrap includes color-coded row classes to indicate meaning or
+            highlight specific rows. In this lesson, we used:
+        </p>
+
+        <pre>
+&lt;tr class="table-success"&gt;
+        </pre>
+
+        <p>
+            Other variants include <strong>table-primary</strong>,
+            <strong>table-danger</strong>, <strong>table-warning</strong>,
+            <strong>table-info</strong>, and more.
+        </p>
+
+        <h3>Column Width Control</h3>
+        <p>
+            We kept our <code>&lt;colgroup&gt;</code> from earlier lessons to
+            control column widths. Bootstrap does not override these widths, so
+            this is still the correct way to size table columns.
+        </p>
+
+        <h3>Why Bootstrap Tables Matter</h3>
+        <p>
+            Bootstrap tables allow you to create professional, consistent table
+            layouts with minimal effort. They are responsive, easy to read, and
+            perfect for dashboards, admin panels, data displays, and more.
+        </p>
+
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
