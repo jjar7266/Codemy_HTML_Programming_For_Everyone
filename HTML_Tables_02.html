@@ -1,0 +1,130 @@
+<!--
+    ============================================
+    Codemy.com — HTML Programming For Everyone
+    Instructor: John Elder
+
+    Coded and Followed Along By:
+    Jose "Joe" Ruiz
+
+    Lesson: Advanced Tables
+    ============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojo's Website</title>
+</head>
+
+<body>
+
+    <!-- ============================
+         Main Heading
+         ============================ -->
+    <h1>Advanced Tables</h1>
+
+    <!-- ============================
+         Advanced Table Example
+         ============================ -->
+    <table style="width:50%;" border="1">
+
+        <!-- Column Width Control -->
+        <colgroup>
+            <col style="width: 15%;">   <!-- Data column -->
+            <col style="width: 35%;">   <!-- Name column -->
+            <col style="width: 30%;">   <!-- Email column -->
+            <col style="width: 20%;">   <!-- Color column -->
+        </colgroup>
+
+        <!-- Table Title Row -->
+        <tr bgcolor="#c0c0c0">
+            <th colspan="4" align="center">My Table</th>
+        </tr>
+
+        <!-- Header Row with Rowspan -->
+        <tr align="left">
+            <th rowspan="4">Data</th>
+            <th>Name</th>
+            <th>Email Address</th>
+            <th>Favorite Color</th>
+        </tr>
+
+        <!-- Data Rows -->
+        <tr>
+            <td>Jose Ruiz</td>
+            <td>jjar7266@gmail.com</td>
+            <td>Black</td>
+        </tr>
+
+        <tr>
+            <td>Tricia Drew</td>
+            <td>tricia@tricia.com</td>
+            <td>Flamingo Pink</td>
+        </tr>
+
+        <tr>
+            <td>Nicole Allan</td>
+            <td>nicole@fake.com</td>
+            <td>Red</td>
+        </tr>
+    </table>
+
+    <!-- ============================
+         Lesson Notes
+         ============================ -->
+    <h2>Lesson Notes</h2>
+
+    <p>
+        In this lesson, we explored advanced table features such as
+        <strong>colspan</strong>, <strong>rowspan</strong>, background colors,
+        and now <strong>column width control</strong> using the
+        <code>&lt;colgroup&gt;</code> element.
+    </p>
+
+    <h3>Why Your Table Looked Different</h3>
+    <p>
+        Different browsers apply different default table styles. This can cause
+        columns to resize unpredictably. By adding a <code>&lt;colgroup&gt;</code>
+        section, we take control of the layout and ensure consistent rendering
+        across all browsers.
+    </p>
+
+    <h3>Using <code>&lt;colgroup&gt;</code> to Control Widths</h3>
+    <p>
+        The <code>&lt;colgroup&gt;</code> element allows you to define column
+        widths before the table content loads. This ensures predictable sizing:
+    </p>
+
+    <pre>
+&lt;colgroup&gt;
+    &lt;col style="width: 15%;"&gt;
+    &lt;col style="width: 35%;"&gt;
+    &lt;col style="width: 30%;"&gt;
+    &lt;col style="width: 20%;"&gt;
+&lt;/colgroup&gt;
+    </pre>
+
+    <p>
+        In our example, the Name column is now wider, matching the layout seen
+        in John's demonstration.
+    </p>
+
+    <h3>Other Advanced Features</h3>
+    <ul>
+        <li><strong>colspan</strong> — stretches a cell across multiple columns</li>
+        <li><strong>rowspan</strong> — stretches a cell across multiple rows</li>
+        <li><strong>bgcolor</strong> — adds background color (old HTML method)</li>
+        <li><strong>border="1"</strong> — adds a simple border (old HTML method)</li>
+    </ul>
+
+    <p>
+        Later in the course, we’ll replace these older attributes with modern CSS
+        for cleaner and more flexible styling.
+    </p>
+
+</body>
+
+</html>
