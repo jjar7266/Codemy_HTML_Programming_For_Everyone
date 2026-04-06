@@ -1,0 +1,117 @@
+<!--
+    ============================================
+    Codemy.com — HTML Programming For Everyone
+    Instructor: John Elder
+
+    Coded and Followed Along By:
+    Jose "Joe" Ruiz
+
+    Lesson: HTML Ordered and Unordered Lists
+    ============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojo's Website</title>
+</head>
+
+<body>
+
+    <!-- ============================
+         Main Heading
+         ============================ -->
+    <h1>HTML Ordered and Unordered Lists</h1>
+
+    <!-- ============================
+         Unordered List Example
+         ============================ -->
+    <h2>My Unordered List</h2>
+
+    <ul>
+        <li>Walk the dog</li>
+        <li>Wash the Motorcycle</li>
+
+        <!-- Nested Ordered List -->
+        <li>Buy Groceries
+            <ol>
+                <li>Hamburger</li>
+                <li>Tomatoes</li>
+                <li>Cheese</li>
+                <li>Hamburger Buns</li>
+            </ol>
+        </li>
+
+        <li>Read a book</li>
+        <li>Do the laundry</li>
+    </ul>
+
+    <!-- ============================
+         Ordered List Example
+         ============================ -->
+    <h2>My Ordered List (Roman Numerals)</h2>
+
+    <ol type="I">
+        <li>Walk the dog</li>
+        <li>Wash the Motorcycle</li>
+        <li>Read a book</li>
+        <li>Do the laundry</li>
+        <li>Buy Groceries</li>
+    </ol>
+</body>
+
+</html>
+
+    <!-- ============================
+         Lesson Notes
+         ============================ -->
+    <h2>Lesson Notes</h2>
+
+    <p>
+        In this lesson, we explored two important HTML list types:
+        <strong>unordered lists</strong> and <strong>ordered lists</strong>.
+        Lists are essential for organizing information on a webpage in a clean,
+        readable format.
+    </p>
+
+    <h3>Unordered Lists (&lt;ul&gt;)</h3>
+    <p>
+        Unordered lists display items with bullet points. They are perfect for
+        tasks, notes, or any information where order does not matter.
+    </p>
+    <ul>
+        <li>Created using the <code>&lt;ul&gt;</code> tag</li>
+        <li>Each item goes inside a <code>&lt;li&gt;</code> tag</li>
+        <li>Bullets appear automatically</li>
+    </ul>
+
+    <h3>Ordered Lists (&lt;ol&gt;)</h3>
+    <p>
+        Ordered lists display items in a specific sequence. HTML allows you to
+        change the numbering style using the <code>type</code> attribute.
+    </p>
+    <ul>
+        <li><code>type="1"</code> — Standard numbers (1, 2, 3)</li>
+        <li><code>type="A"</code> — Uppercase letters (A, B, C)</li>
+        <li><code>type="a"</code> — Lowercase letters (a, b, c)</li>
+        <li><code>type="I"</code> — Uppercase Roman numerals (I, II, III)</li>
+        <li><code>type="i"</code> — Lowercase Roman numerals (i, ii, iii)</li>
+    </ul>
+
+    <h3>Nesting Lists</h3>
+    <p>
+        You can place one list inside another to create sub‑items. This is useful
+        for categories, shopping lists, or multi‑level outlines. Just make sure
+        the nested list is placed <em>inside</em> an <code>&lt;li&gt;</code> tag
+        to keep the structure valid.
+    </p>
+
+    <p>
+        This lesson helps build the foundation for more advanced HTML structures.
+        Lists appear everywhere — navigation menus, documentation, forms, and
+        even entire website layouts. Mastering them early makes everything else
+        easier.
+    </p>
