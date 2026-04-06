@@ -1,0 +1,135 @@
+<!--
+    ============================================
+    Codemy.com — HTML Programming For Everyone
+    Instructor: John Elder
+
+    Coded and Followed Along By:
+    Jose "Joe" Ruiz
+
+    Lesson: Using CSS With HTML
+    ============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojo's Website</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================
+         Main Heading
+         ============================ -->
+    <h1>Using CSS With HTML</h1>
+
+    <!-- ============================
+         Table Example Styled With CSS
+         ============================ -->
+    <table class="styled-table">
+
+        <!-- Column Width Control -->
+        <colgroup>
+            <col style="width: 15%;">  <!-- Data column -->
+            <col style="width: 35%;">  <!-- Name column -->
+            <col style="width: 30%;">  <!-- Email column -->
+            <col style="width: 20%;">  <!-- Color column -->
+        </colgroup>
+
+        <!-- Table Title Row -->
+        <tr class="title-row">
+            <th colspan="4">My Table</th>
+        </tr>
+
+        <!-- Header Row with Rowspan -->
+        <tr>
+            <th rowspan="4">Data</th>
+            <th>Name</th>
+            <th>Email Address</th>
+            <th>Favorite Color</th>
+        </tr>
+
+        <!-- Data Rows -->
+        <tr>
+            <td>Jose Ruiz</td>
+            <td>jjar7266@gmail.com</td>
+            <td>Black</td>
+        </tr>
+
+        <tr>
+            <td>Tricia Drew</td>
+            <td>tricia@tricia.com</td>
+            <td>Flamingo Pink</td>
+        </tr>
+
+        <tr>
+            <td>Nicole Allan</td>
+            <td>nicole@fake.com</td>
+            <td>Red</td>
+        </tr>
+    </table>
+
+    <!-- ============================
+         Lesson Notes
+         ============================ -->
+    <h2>Lesson Notes</h2>
+
+    <p>
+        In this lesson, we learned how to connect an external CSS file to an HTML
+        document using the <code>&lt;link&gt;</code> tag. This allows us to keep
+        our styling separate from our HTML structure, which is the modern and
+        professional way to build websites.
+    </p>
+
+    <h3>Why External CSS?</h3>
+    <ul>
+        <li>Keeps HTML clean and readable</li>
+        <li>Allows one CSS file to style multiple pages</li>
+        <li>Makes it easier to update the look of an entire site</li>
+        <li>Separates content (HTML) from design (CSS)</li>
+    </ul>
+
+    <h3>The Link Tag</h3>
+    <p>
+        We added this line inside the <code>&lt;head&gt;</code> section:
+    </p>
+
+    <pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+    </pre>
+
+    <p>
+        This tells the browser to load and apply the styles from the external
+        <strong>style.css</strong> file.
+    </p>
+
+    <h3>Moving Away From Old HTML Styling</h3>
+    <p>
+        Earlier lessons used attributes like <code>border="1"</code> and
+        <code>bgcolor</code>. These still work, but they are considered outdated.
+        CSS gives us far more control and keeps our HTML clean.
+    </p>
+
+    <h3>Using CSS Classes</h3>
+    <p>
+        We added a class to the table:
+    </p>
+
+    <pre>
+&lt;table class="styled-table"&gt;
+    </pre>
+
+    <p>
+        This lets us style the entire table from the CSS file without touching
+        the HTML again.
+    </p>
+
+</body>
+
+</html>
