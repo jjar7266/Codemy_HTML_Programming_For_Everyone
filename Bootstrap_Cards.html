@@ -1,0 +1,205 @@
+<!--
+    ============================================
+    Codemy.com — HTML Programming For Everyone
+    Instructor: John Elder
+
+    Coded and Followed Along By:
+    Jose "Joe" Ruiz
+
+    Lesson: Bootstrap Cards
+    ============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojo's Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- ============================================
+         Bootstrap Navbar
+         ============================================ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <!-- Website Title / Brand -->
+            <a class="navbar-brand" href="#">Welcome to Jose Ruiz's page</a>
+
+            <!-- Hamburger Button (visible on small screens) -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Left Side Navigation Links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+
+                </ul>
+
+                <!-- Right Side Search Form -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2"
+                           type="search"
+                           placeholder="Search"
+                           aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         Main Heading
+         ============================================ -->
+    <div class="container mt-4">
+        <h1>Bootstrap Cards</h1>
+
+        <!-- ============================================
+             Bootstrap Table Example (from previous lesson)
+             ============================================ -->
+        <table class="table table-striped table-hover">
+
+            <!-- Column Width Control -->
+            <colgroup>
+                <col style="width: 35%;"> <!-- Name column -->
+                <col style="width: 35%;"> <!-- Email column -->
+                <col style="width: 30%;"> <!-- Color column -->
+            </colgroup>
+
+            <!-- Header Row -->
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Email Address</th>
+                    <th>Favorite Color</th>
+                </tr>
+            </thead>
+
+            <!-- Data Rows -->
+            <tbody>
+                <tr>
+                    <td>Jose Ruiz</td>
+                    <td>jjar7266@gmail.com</td>
+                    <td>Black</td>
+                </tr>
+
+                <tr class="table-success">
+                    <td>Tricia Drew</td>
+                    <td>tricia@tricia.com</td>
+                    <td>Flamingo Pink</td>
+                </tr>
+
+                <tr>
+                    <td>Nicole Allan</td>
+                    <td>nicole@fake.com</td>
+                    <td>Red</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <!-- ============================================
+             Bootstrap Card Example
+             ============================================ -->
+        <div class="card" style="width: 18rem;">
+
+            <!-- Card Image -->
+            <img src="flamingo_sunset.png" class="card-img-top" alt="...">
+
+            <!-- Card Body -->
+            <div class="card-body">
+                <h5 class="card-title">Tricia's Quiet place</h5>
+
+                <p class="card-text">
+                    Jesus is the King of Kings and Lord of Lords !
+                </p>
+
+                <a href="#" class="btn btn-secondary">Thank You Jesus</a>
+            </div>
+        </div>
+
+        <!-- ============================================
+             Lesson Notes
+             ============================================ -->
+        <h2 class="mt-4">Lesson Notes</h2>
+
+        <p>
+            In this lesson, we learned how to use Bootstrap’s <strong>Card</strong> component.
+            Cards are flexible content containers that can include images, text, buttons,
+            lists, links, and more. They are perfect for product listings, profile boxes,
+            blog previews, dashboards, and featured content.
+        </p>
+
+        <h3>Bootstrap Card Classes Used</h3>
+
+        <ul>
+            <li>
+                <strong>card</strong> — the main wrapper that activates Bootstrap’s card styling.
+            </li>
+            <li>
+                <strong>card-img-top</strong> — places an image at the top of the card.
+            </li>
+            <li>
+                <strong>card-body</strong> — the section that holds text, titles, and buttons.
+            </li>
+            <li>
+                <strong>card-title</strong> — styles the card’s heading.
+            </li>
+            <li>
+                <strong>card-text</strong> — styles the paragraph text inside the card.
+            </li>
+            <li>
+                <strong>btn btn-secondary</strong> — a Bootstrap button styled with the “secondary” color.
+            </li>
+        </ul>
+
+        <h3>Why Cards Are Useful</h3>
+        <p>
+            Cards are one of the most commonly used Bootstrap components because they are:
+        </p>
+
+        <ul>
+            <li>Responsive by default</li>
+            <li>Easy to customize</li>
+            <li>Perfect for layouts with repeated content</li>
+            <li>Great for mixing images, text, and actions</li>
+        </ul>
+
+        <p>
+            In future lessons, we can explore card groups, horizontal cards, colored cards,
+            and cards with list groups.
+        </p>
+
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
