@@ -44,5 +44,25 @@ Each lesson is recreated step‑by‑step with clean, semantic markup, organized
 This repo serves as a personal learning archive and a reference for revisiting the concepts taught in this course.
 All code is written by **Jose “Joe” Ruiz**, following the Codemy.com curriculum while improving clarity, structure, and readability.
 
-## Notes
-This repository is for educational use only and follows along with the Codemy.com course.
+---
+
+## ⚠️ Educational Disclaimer
+
+This repository is an independent educational project created while following
+training materials and tutorials provided by Codemy.com.
+
+All source code contained in this repository was written by **Jose "Joe" Ruiz**
+as part of a personal learning process while studying the concepts presented in
+the course.
+
+Examples may be modified, expanded, reorganized, modernized, or refactored to
+reflect personal experimentation, coding preferences, current best practices,
+and updated versions of Python or related technologies.
+
+This repository is not affiliated with, endorsed by, sponsored by, or
+published by Codemy.com or its instructors.
+
+If you find the material presented here helpful, please consider supporting the
+original course creators by obtaining access to the official course materials.
+
+---
